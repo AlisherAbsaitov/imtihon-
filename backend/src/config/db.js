@@ -7,7 +7,9 @@ dotenv.config()
  */
 export const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI);
+    const conn = await mongoose.connect(
+      "mongodb+srv://abdulloh9696:FZNGoPo4V3oZLcZw@cluster0.g7r9ryh.mongodb.net/?appName=Cluster0",
+    );
     console.log(`✅ MongoDB ulandi: ${conn.connection.host}`);
   } catch (error) {
     console.error(`❌ MongoDB ulanish xatosi: ${error.message}`);
