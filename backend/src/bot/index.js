@@ -9,9 +9,10 @@ import { getAdminIds } from './middlewares/adminOnly.js';
  * Token bo'lmasa (masalan testda) — null qaytadi, server baribir ishlaydi.
  */
 let bot = null;
+const BOT_TOKEN = process.env.BOT_TOKEN?.trim();
 
-if ("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8") {
-  bot = new Telegraf("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8te");
+if (BOT_TOKEN) {
+  bot = new Telegraf(BOT_TOKEN);
 
   // Wizard/scene'lar uchun session + stage
   const stage = new Scenes.Stage([orderScene]);
