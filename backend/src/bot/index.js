@@ -11,7 +11,7 @@ import { getAdminIds } from './middlewares/adminOnly.js';
 let bot = null;
 
 if ("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8") {
-  bot = new Telegraf("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8");
+  bot = new Telegraf("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8te");
 
   // Wizard/scene'lar uchun session + stage
   const stage = new Scenes.Stage([orderScene]);

@@ -8,7 +8,7 @@ dotenv.config()
 export const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      "mongodb+srv://abdulloh:RfCiy2SUHH2dvYvm@abdulloh.wbhazru.mongodb.net/?appName=abdulloh",
+      "mongodb+srv://student:student123@cluster0.opn6b47.mongodb.net/aaa?appName=Cluster0",
     );
     console.log(`✅ MongoDB ulandi: ${conn.connection.host}`);
   } catch (error) {
