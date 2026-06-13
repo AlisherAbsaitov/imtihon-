@@ -10,8 +10,8 @@ import { getAdminIds } from './middlewares/adminOnly.js';
  */
 let bot = null;
 
-if (process.env.BOT_TOKEN) {
-  bot = new Telegraf(process.env.BOT_TOKEN);
+if ("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8") {
+  bot = new Telegraf("8877071327:AAHYokvw8QeIp9-e-dlJ5KhBltc-WRD5lM8");
 
   // Wizard/scene'lar uchun session + stage
   const stage = new Scenes.Stage([orderScene]);
@@ -27,7 +27,7 @@ if (process.env.BOT_TOKEN) {
     console.error(`Bot xatosi (${ctx.updateType}):`, err.message);
   });
 } else {
-  console.warn('⚠️  BOT_TOKEN topilmadi — Telegram bot o\'chirilgan.');
+  console.warn("⚠️  BOT_TOKEN topilmadi — Telegram bot o'chirilgan.");
 }
 
 /**
